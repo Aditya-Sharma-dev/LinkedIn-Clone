@@ -1,10 +1,10 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 //import { fetchCount } from './counterAPI';
 
-const initialState = {
-  value: 0,
-  status: 'idle',
-};
+// const initialState = {
+//   value: 0,
+//   status: "idle",
+// };
 
 // The function below is called a thunk and allows us to perform async logic. It
 // can be dispatched like a regular action: `dispatch(incrementAsync(10))`. This
@@ -23,12 +23,12 @@ const initialState = {
 export const userSlice = createSlice({
   name: "user",
   initialState: {
-    user: null
+    user: null,
   },
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
-    login: (state,action) => {
-      state.value = action.payload;
+    login: (state, action) => {
+      state.user = action.payload;
     },
     logout: (state) => {
       state.user = null;
@@ -48,7 +48,7 @@ export const userSlice = createSlice({
   // },
 });
 
-export const { login,logout } = userSlice.actions;
+export const { login, logout } = userSlice.actions;
 
 // The function below is called a selector and allows us to select a value from
 // the state. Selectors can also be defined inline where they're used instead of
