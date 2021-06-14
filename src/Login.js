@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { login } from "./features/userSlice";
 import { auth } from "./firebase";
 import "./Login.css";
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -69,7 +70,7 @@ function Login() {
         <input
           value={profilePic}
           onChange={(e) => setProfilePic(e.target.value)}
-          placeholder="Profile Phoro URL"
+          placeholder="Profile Photo URL"
           type="text"
         />
         <input
