@@ -20,7 +20,7 @@ function Login() {
             email: userAuth.user.email,
             uid: userAuth.user.uid,
             displayName: userAuth.user.displayName,
-            profilrUrl: userAuth.user.photoURL,
+            profileUrl: userAuth.user.photoURL,
           })
         );
       })
@@ -95,6 +95,7 @@ function Login() {
           Register Now
         </span>
       </p>
+      {/* {console.log('123')} */}
     </div>
   );
 }

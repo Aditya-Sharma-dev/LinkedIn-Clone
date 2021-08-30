@@ -16,8 +16,11 @@ import { Button } from "@material-ui/core";
 
 function Feed() {
   const user = useSelector(selectUser);
-  const [input, setInput] = useState("");
+  const [inputs, setInputs] = useState("");
   const [posts, setPosts] = useState([]);
+  const handleChange = (event) => {
+    setInputs(event.target.value)
+  }
 
   useEffect(() => {
     db.collection("posts")
@@ -31,19 +34,18 @@ function Feed() {
         )
       );
   }, []);
-
   const sendPost = (e) => {
     e.preventDefault();
 
     db.collection("posts").add({
       name: user.displayName,
       description: user.email,
-      message: input,
+      message: inputs,
       photoUrl: user.photoUrl || "",
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
 
-    setInput("");
+    setInputs("");
   };
   return (
     <div className="feed">
@@ -52,8 +54,8 @@ function Feed() {
           <CreateIcon />
           <form>
             <input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
+              value={inputs}
+              onChange={handleChange}
               type="text"
             />
             <Button onClick={sendPost} type="submit">

@@ -9,5 +9,6 @@
   margin-top: 35px;
   margin-left: 20px;
   margin-right: 20px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: 100%;
 }

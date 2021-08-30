@@ -21,11 +21,11 @@ function Widgets() {
         <h2>LinkedIn news</h2>
         <InfoIcon />
       </div>
-      {newsArticle("Paise", "I dammed")}
-      {newsArticle("Paise", "Bitcoin")}
-      {newsArticle("Virus", "Covid")}
-      {newsArticle("Modi", "Im dammed")}
-      {newsArticle("Snake", "Im dammed")}
+      {newsArticle("Covid", "3 million deaths")}
+      {newsArticle("Bitcoin", "Elon musk😏")}
+      {newsArticle("Modi ji", "Vaccine")}
+      {newsArticle("ICC TEST", "IND V NZ")}
+      {newsArticle("Snake", "Many Girls")}
     </div>
   );
 }
