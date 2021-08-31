@@ -18,9 +18,14 @@
 .post_body {
   overflow-wrap: anywhere;
   margin-left: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.post_body > p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .post_body > h2 {
   font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .post_buttons {
   display: flex;

@@ -13,12 +13,12 @@ const Post = forwardRef(({ Name, Description, Message, PhotoURL }, ref) => {
       <div className="post_header">
         <Avatar />
         <div className="post_info">
-          <h2>{Name}</h2>
+          <h4>{Name}</h4>
           <p>{Description}</p>
         </div>
       </div>
       <div className="post_body">
-        <p>{Message}</p>
+        <p><b>{Message}</b></p>
       </div>
       <div className="post_buttons">
         <InputOption Icon={ThumbUpAltIcon} Title="Like" Color="Purple" />

@@ -27,6 +27,7 @@
   margin-left: 10px;
   outline-width: 0;
   font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .feed_input > form > button {
   display: none;
